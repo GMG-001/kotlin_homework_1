@@ -15,10 +15,8 @@ fun main() {
 // ფუნქცია გადაეცემა მთელი რიცხვების მასივი და აბრუნებს ლუწ ინდექსზე მყოფი რიცხვების ჯამს მთელ რიცხვებში
 fun sumArray(test: IntArray): Int{
     var sumNumber = 0
-    for (element in test) {
-        if( test.indexOf(element) % 2 == 0 && test.indexOf(element) !=0 ){
-            sumNumber += element
-        }
+    for (element in 3..test.size step 2) {
+        sumNumber += element
     }
     return sumNumber
 }
